@@ -21,6 +21,8 @@ import MenuItem from "@mui/material/MenuItem";
 import { Bars3Icon, MagnifyingGlassIcon, ShoppingBagIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import Avatar from "@mui/material/Avatar";
 import { useNavigate } from 'react-router-dom';
+import logo9 from '../FrontImage/logo9.png'
+
 
 const navigation = {
   categories: [
@@ -328,7 +330,7 @@ export default function Navigation() {
                   <span className="sr-only">Your Company</span>
                   <img
                     alt=""
-                    src="https://res.cloudinary.com/dllsq609n/image/upload/v1779545242/logo9_ovzaqm.png"
+                    src={logo9}
                     className="h-16 w-auto mr-2"
                   />
                 </a>
