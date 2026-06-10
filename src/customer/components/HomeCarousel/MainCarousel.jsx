@@ -3,16 +3,18 @@ import { MainCarouselData } from './MainCarouselData';
 import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
 const MainCarousel = () => {
-    const items = MainCarouselData.map((item) => <img className="cursor-pointer"
-        role='presentation' src={item.image} alt="" />);
+    const items = MainCarouselData.map((item) =>
+        <img className="cursor-pointer w-full h-[200px] sm:h-[300px] md:h-[450px] lg:h-[550px] object-cover"
+            role='presentation' src={item.image} alt="" />);
+
     return (
         <AliceCarousel
-        items={items}
-       disableButtonsControls
-       autoPlay
-       autoPlayInterval={1000}
-       infinite
-    />
+            items={items}
+            disableButtonsControls
+            autoPlay
+            autoPlayInterval={1000}
+            infinite
+        />
     );
 }
 

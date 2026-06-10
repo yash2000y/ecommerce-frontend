@@ -252,7 +252,7 @@ export default function Product() {
                 <form className="hidden lg:block">
 
                   {[...filters, ...singleFilter].map((section) => (
-                    <Disclosure key={section.id} as="div" className="border-b border-gray-200 py-6">
+                    <Disclosure key={section.id} as="div" className="border-b border-gray-1000 py-6">
 
 
                       <h3 className="-my-3 flow-root">

@@ -16,7 +16,7 @@ const HomeSectionCarosel = ({data, sectionName}) => {
         1024: { items: 5 },
     };
     const syncActiveIndex = (e) => { setActiveIndex(e.item); };
-    const items = data?.slice(0,10)?.map((item) => (
+    const items = data?.slice(0,40)?.map((item) => (
     <HomeSectionCard product={item}/>
 )) || [];
 
